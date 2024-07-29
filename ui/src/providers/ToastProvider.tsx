@@ -14,7 +14,7 @@ export default function ToastProvider({
       {children}
       <AlertModal />
       <ConfirmModal />
-      <ToastContainer delay={2000} zIndex={999} />
+      <ToastContainer delay={3000} zIndex={999} />
     </>
   );
 }
