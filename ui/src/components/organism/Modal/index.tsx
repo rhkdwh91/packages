@@ -1,7 +1,6 @@
 "use client";
 
 import React, { ReactNode, useEffect, useCallback, useReducer } from "react";
-import { Box, Text } from "@chakra-ui/react";
 import ReactDom from "react-dom";
 import emitter from "../../../utils/emitter";
 
@@ -53,27 +52,10 @@ function Container({ children }: LayoutProps) {
 
   return (
     <>
-      <Box
-        position="fixed"
-        top="0"
-        left="0"
-        width="100%"
-        height="100%"
-        zIndex={9998}
-        backgroundColor="rgba(0,0,0,0.4)"
-      />
-      <Box
-        position="fixed"
-        backgroundColor="#fff"
-        left="50%"
-        top="50%"
-        transform="translate(-50%, -50%)"
-        padding={5}
-        borderRadius={10}
-        zIndex={9999}
-      >
+      <div className="fixed top-0 left-0 w-[100%] h-[100%] z-50 bg-[rgba(0,0,0,0.4)]" />
+      <div className="fixed bg-white left-[50%] top-[50%] translate-y-[50%] translate-x-[50%] p-5 rounded-sm z-50">
         <div>{children}</div>
-      </Box>
+      </div>
     </>
   );
 }
@@ -84,11 +66,9 @@ interface HeaderProps {
 
 function Header({ children }: HeaderProps) {
   return (
-    <Box paddingBottom={4}>
-      <Text fontSize={20} fontWeight="bold">
-        {children}
-      </Text>
-    </Box>
+    <div className="pb-4">
+      <span className="text-bold">{children}</span>
+    </div>
   );
 }
 
@@ -97,11 +77,7 @@ interface ContentProps {
 }
 
 function Content({ children }: ContentProps) {
-  return (
-    <Box padding={3} whiteSpace="pre-wrap">
-      {children}
-    </Box>
-  );
+  return <div className="p-4 pre-wrap">{children}</div>;
 }
 
 interface FooterProps {
@@ -109,11 +85,7 @@ interface FooterProps {
 }
 
 function Footer({ children }: FooterProps) {
-  return (
-    <Box display="flex" gap="4" justifyContent="center" marginTop={4}>
-      {children}
-    </Box>
-  );
+  return <div className="flex gap-4 justify-center mt-4">{children}</div>;
 }
 
 interface ModalProps {

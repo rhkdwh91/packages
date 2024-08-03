@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useReducer } from "react";
-import { Button } from "@chakra-ui/react";
+import { Button } from "@ui/src/components/atom/Button";
 import Modal from "../Modal";
 import emitter from "../../../utils/emitter";
 import ReactDom from "react-dom";
@@ -96,7 +96,7 @@ export default function ConfirmModal() {
           <Button variant="ghost" onClick={handleClickConfirm}>
             확인
           </Button>
-          <Button colorScheme="blue" mr={3} onClick={handleClickCancel}>
+          <Button className="mr-4" onClick={handleClickCancel}>
             취소
           </Button>
         </Modal.Footer>

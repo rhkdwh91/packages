@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useReducer } from "react";
-import { Button } from "@chakra-ui/react";
+import { Button } from "@ui/src/components/atom/Button";
 import Modal from "../Modal";
 import emitter from "../../../utils/emitter";
 import ReactDom from "react-dom";
@@ -79,7 +79,7 @@ export default function AlertModal() {
         <Modal.Header>Alert</Modal.Header>
         <Modal.Content>{state.message}</Modal.Content>
         <Modal.Footer>
-          <Button colorScheme="blue" mr={3} onClick={handleClickButton}>
+          <Button className="mr-4" onClick={handleClickButton}>
             확인
           </Button>
         </Modal.Footer>
