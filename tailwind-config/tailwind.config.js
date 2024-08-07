@@ -19,6 +19,10 @@ module.exports = {
     },
     extend: {
       colors: {
+        colors: {
+          electric: "#db00ff",
+          ribbon: "#0047ff",
+        },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
