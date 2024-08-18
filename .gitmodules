@@ -1,0 +1,3 @@
+[submodule "tailwind-config"]
+	path = tailwind-config
+	url = https://github.com/rhkdwh91/tailwind-config.git
