@@ -1,3 +1,9 @@
 [submodule "tailwind-config"]
 	path = tailwind-config
 	url = https://github.com/rhkdwh91/tailwind-config.git
+[submodule "kyz-editor"]
+	path = kyz-editor
+	url = https://github.com/rhkdwh91/kyz-editor.git
+[submodule "kyz-toast"]
+	path = kyz-toast
+	url = https://github.com/rhkdwh91/kyz-toast.git
