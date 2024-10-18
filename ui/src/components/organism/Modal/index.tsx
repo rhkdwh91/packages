@@ -53,7 +53,7 @@ function Container({ children }: LayoutProps) {
   return (
     <>
       <div className="fixed top-0 left-0 w-[100%] h-[100%] z-50 bg-[rgba(0,0,0,0.4)]" />
-      <div className="fixed bg-white left-[50%] top-[50%] translate-y-[50%] translate-x-[50%] p-5 rounded-sm z-50">
+      <div className="fixed bg-gray-800 left-[50%] top-[50%] translate-y-[-50%] translate-x-[-50%] p-5 rounded-sm z-50">
         <div>{children}</div>
       </div>
     </>
