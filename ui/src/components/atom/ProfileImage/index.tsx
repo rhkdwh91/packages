@@ -6,8 +6,8 @@ interface ProfileImageProps {
 
 export default function ProfileImage({
   src,
-  width = 30,
-  height = 30,
+  width = 25,
+  height = 25,
 }: ProfileImageProps) {
   return (
     <div className="border-2 rounded-full mr-1 inline-block overflow-hidden">
