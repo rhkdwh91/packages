@@ -3,7 +3,7 @@
 import { useEffect, useReducer } from "react";
 import { Button } from "@ui/src/components/atom/Button";
 import Modal from "../Modal";
-import emitter from "../../../utils/emitter";
+import emitter from "@ui/src/utils/emitter";
 import ReactDom from "react-dom";
 
 interface IState {

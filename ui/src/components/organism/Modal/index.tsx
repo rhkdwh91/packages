@@ -2,7 +2,7 @@
 
 import React, { ReactNode, useEffect, useCallback, useReducer } from "react";
 import ReactDom from "react-dom";
-import emitter from "../../../utils/emitter";
+import emitter from "@ui/src/utils/emitter";
 
 interface IState {
   isOpen: boolean;
